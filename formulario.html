@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <style>
+    .formulari {
+      border-radius: 2px;
+      background-color: orange;
+    }
+
+    .formulari label {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form class="formulari">
+    <label for="nombre">Rellena los siguientes datos:</label><br><br>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="Abril" required><br><br>
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required><br><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="16" max="64" required><br><br>
+    <label for="menor">Menor o no:</label>
+    <input type="checkbox" id="menor" name="menor"><br><br>
+    <label for="tipos">Tipos de entrada:</label>
+    <select id="tipos" name="tipos" required>
+      <option value="">Seleciona una opción</option>
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+      <option value="opcion3">Opción 3</option>
+    </select><br><br>
+    <input type="submit" value="Comprar">
+  </form>
+</body>
+</html>
